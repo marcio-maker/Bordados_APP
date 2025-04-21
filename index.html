@@ -96,7 +96,24 @@
                 </div>
             </div>
         </section>
-
+        <section id="about" class="about-section">
+            <div class="container">
+              <div class="section-title">
+                <h2>Sobre a Artesã</h2>
+              </div>
+              <div class="about-content">
+                <div class="about-img">
+                  <img src="https://i.pinimg.com/736x/35/66/51/3566518de3751b42d05212dff1c186bc.jpg" alt="Sirleia, artesã especializada em bordados" loading="lazy">
+                </div>
+                <div class="about-text">
+                  <h3>Minha História com o Bordado</h3>
+                  <p>Há mais de 15 anos transformo linhas e tecidos em arte...</p>
+                  <h3>Minha Filosofia</h3>
+                  <p>Cada ponto é feito com cuidado e dedicação...</p>
+                </div>
+              </div>
+            </div>
+          </section>
         <!-- Products Section -->
         <section class="products" id="products">
             <div class="container">
@@ -170,28 +187,92 @@
                     <p>"Cada ponto de bordado é uma expressão de fé e amor, uma forma de trazer beleza e luz para o cotidiano."</p>
                 </blockquote>
             </div>
+        <!-- Substitua a seção de cursos por: -->
+        <section class="courses" id="courses"></section>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossos Cursos</h2>
+                    <p>Explore nossos cursos e aprenda a arte do bordado com especialistas.</p>
+                </div>
+                <div class="courses-grid">
+                    <article class="course-card">
+                        <div class="course-img">
+                            <img src="https://i.pinimg.com/736x/b2/7b/85/b27b859bcafdf1ec01d92998021f1c30.jpg" alt="Curso de Bordado Básico" loading="lazy">
+                        </div>
+                        <div class="course-info">
+                            <h3>Curso de Bordado Básico</h3>
+                            <p>Aprenda os fundamentos do bordado artesanal.</p>
+                            <a href="#" class="btn">Saiba Mais</a>
+                        </div>
+                    </article>
+                    <article class="course-card">
+                        <div class="course-img">
+                            <img src="https://i.pinimg.com/736x/67/b7/a5/67b7a5423634b6fcca26b2064f375781.jpg" alt="Curso de Bordado Avançado" loading="lazy">
+                        </div>
+                        <div class="course-info">
+                            <h3>Curso de Bordado Avançado</h3>
+                            <p>Domine técnicas avançadas para criar peças únicas.</p>
+                            <a href="#" class="btn">Saiba Mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-       <!-- Substitua a seção de cursos por: -->
-<section class="courses" id="courses">
-    <div class="container">
-        <div class="section-title">
-            <h2>Nossos Cursos</h2>
-        </div>
-        <div class="courses-carousel">
-            <div class="carousel-container">
-                <div class="carousel-track" aria-live="polite"></div>
-                <button class="carousel-btn prev" aria-label="Slide anterior">
-                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
-                </button>
-                <button class="carousel-btn next" aria-label="Próximo slide">
-                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
-                </button>
-            </div>
-            <div class="carousel-dots"></div>
-        </div>
-    </div>
-</section>
+        <style>
+            .courses {
+                padding: 60px 0;
+                background-color: #f9f9f9;
+            }
+            .courses-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+            }
+            .course-card {
+                background: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            }
+            .course-img img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .course-info {
+                padding: 20px;
+                text-align: center;
+            }
+            .course-info h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                color: #333;
+            }
+            .course-info p {
+                font-size: 1rem;
+                color: #666;
+                margin-bottom: 15px;
+            }
+            .course-info .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+            .course-info .btn:hover {
+                background-color: #0056b3;
+            }
+        </style>
 
         <!-- Gallery and Testimonials Section -->
         <section class="gallery-testimonials">
@@ -277,7 +358,34 @@
                 </div>
             </div>
         </section>
-
+  
+  <!-- Adicione isso antes da seção de contato -->
+  <section id="blog" class="blog-preview">
+    <div class="container">
+      <div class="section-title">
+        <h2>Dicas e Tutoriais</h2>
+        <p>Aprenda mais sobre o mundo do bordado artesanal</p>
+      </div>
+      
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-card-img">
+            <img src="https://i.pinimg.com/736x/bf/81/6f/bf816f70639b915c6ee46648c1a8128a.jpg" alt="Técnicas básicas de ponto cruz" loading="lazy">
+          </div>
+          <div class="blog-card-content">
+            <h3>Guia para Iniciantes: Ponto Cruz</h3>
+            <p>Aprenda os pontos básicos e como começar seu primeiro projeto...</p>
+            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+        
+        <!-- Adicione mais artigos conforme necessário -->
+      </div>
+    </div>
+  </section>
         <!-- Quote Form Section -->
         <section class="quote-form" id="quote">
             <div class="container">
@@ -403,7 +511,20 @@
 
     <!-- CSRF Token para formulários -->
     <meta name="csrf-token" content="SEU_TOKEN_CSRF_AQUI">
-
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Sirleia",
+          "jobTitle": "Artesã de Bordados",
+          "image": "foto-artesa.jpg",
+          "description": "Artesã especializada em bordados manuais há mais de 15 anos",
+          "sameAs": [
+            "https://www.instagram.com/sirleiabordados",
+            "https://www.facebook.com/sirleiabordados"
+          ]
+        }
+        </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
     <script>
